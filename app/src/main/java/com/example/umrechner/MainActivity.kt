@@ -26,6 +26,10 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+
+/*Das UserInterface ist Columns gesetzt
+Es gibt sowol das Textfeld an, in dem man die Nummern eingeben kann als auch den Button zum durchführen der Funktion.
+*/
 @Composable
 fun UserInputInterface(modifier: Modifier = Modifier) {
     var number by remember { mutableStateOf("") }
@@ -76,8 +80,10 @@ fun UserInputInterfacePreview() {
     }
 }
 
+
+//Das ist die Umrechnungsfunktion, die die Jahre in Tage umrechnet, inklusive der Berücksichtigung von Schaltjahren
 fun recycler(x: Int): Int {
-    // Hier kommt deine Logik rein
+    
     var tage: Int = 0
 
 
